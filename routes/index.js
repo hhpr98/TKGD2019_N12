@@ -217,4 +217,14 @@ router.get('/search', function(req, res, next) {
   res.render('search',{dat1,dat2});
 });
 
+
+
+router.get('/cart', function(req, res, next) {
+  res.render('cart');
+});
+
+router.get('/checkout', function(req, res, next) {
+  res.render('checkout');
+});
+
 module.exports = router;
