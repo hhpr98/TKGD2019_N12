@@ -217,10 +217,41 @@ router.get('/search', function(req, res, next) {
   res.render('search',{dat1,dat2});
 });
 
-
+var datCart = [
+    {
+        "name":"G_SHOCK",
+        "seri":"GAS-100BL-1A",
+        "price":"450.000 VNĐ",
+        "number":"2",
+        "total":"500.000 VNĐ",
+        "url":"images/shop_product/01.jpg",
+        "size":"Large",
+        "color":"#252525",
+    },
+    {
+        "name":"G_SHOCK",
+        "seri":"DW-5600THB-7",
+        "price":"350.000 VNĐ",
+        "number":"1",
+        "total":"350.000 VNĐ",
+        "url":"images/shop_product/02.jpg",
+        "size":"XL",
+        "color":"blue",
+    },
+    {
+        "name":"Orient",
+        "seri":"SAB0B007WB Nam",
+        "price":"4.610.000 VNĐ",
+        "number":"1",
+        "total":"4.990.000 VNĐ",
+        "url":"images/shop_product/03.jpg",
+        "size":"M",
+        "color":"red",
+    },
+];
 
 router.get('/cart', function(req, res, next) {
-  res.render('cart');
+  res.render('cart',{datCart});
 });
 
 router.get('/checkout', function(req, res, next) {
