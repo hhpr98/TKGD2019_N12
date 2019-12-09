@@ -223,7 +223,7 @@ var datCart = [
         "seri":"GAS-100BL-1A",
         "price":"450.000 VNĐ",
         "number":"2",
-        "total":"500.000 VNĐ",
+        "total":"900.000 VNĐ",
         "url":"images/shop_product/01.jpg",
         "size":"Large",
         "color":"#252525",
@@ -254,8 +254,44 @@ router.get('/cart', function(req, res, next) {
   res.render('cart',{datCart});
 });
 
+var datCheck = [
+    {
+        "name":"G_SHOCK",
+        "fullname":"G_SHOCK GAS-100BL-1A",
+        "seri":"GAS-100BL-1A",
+        "price":"450.000 VNĐ",
+        "number":"2",
+        "total":"900.000 VNĐ",
+        "url":"images/shop_product/01.jpg",
+        "size":"Large",
+        "color":"#252525",
+    },
+    {
+        "name":"G_SHOCK",
+        "fullname":"G_SHOCK DW-5600THB-7",
+        "seri":"DW-5600THB-7",
+        "price":"350.000 VNĐ",
+        "number":"1",
+        "total":"350.000 VNĐ",
+        "url":"images/shop_product/02.jpg",
+        "size":"XL",
+        "color":"blue",
+    },
+    {
+        "name":"Orient",
+        "fullname":"Orient SAB0B007WB",
+        "seri":"SAB0B007WB Nam",
+        "price":"4.610.000 VNĐ",
+        "number":"1",
+        "total":"4.990.000 VNĐ",
+        "url":"images/shop_product/03.jpg",
+        "size":"M",
+        "color":"red",
+    },
+];
+
 router.get('/checkout', function(req, res, next) {
-  res.render('checkout');
+  res.render('checkout',{datCheck});
 });
 
 module.exports = router;
