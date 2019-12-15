@@ -1,2 +1,6 @@
+# editors
+*.code-workspace
+# .idea
+
 # dependencies
 node_modules
