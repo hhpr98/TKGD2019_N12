@@ -27,20 +27,20 @@ var dat1 = [
       "url":"images/shop_product/03.jpg"
     },
     {
-          "name":"Orient",
-          "seri":"SAB0B007WB Nam",
+          "name":"Seiko",
+          "seri":"SRPC57K1 Nam",
           "des":"Không có mô tả",
-          "price":"4.610.000 VNĐ",
-          "oldprice":"4.990.000 VNĐ",
-          "url":"images/shop_product/03.jpg"
+          "price":"4.140.000 VNĐ",
+          "oldprice":"7.340.000 VNĐ",
+          "url":"images/shop_product/04.jpg"
     },
     {
-          "name":"Orient",
-          "seri":"SAB0B007WB Nam",
+          "name":"Daniel Wellington",
+          "seri":"Bayswater DW00100276",
           "des":"Không có mô tả",
-          "price":"4.610.000 VNĐ",
+          "price":"4.600.000 VNĐ",
           "oldprice":"4.990.000 VNĐ",
-          "url":"images/shop_product/03.jpg"
+          "url":"images/shop_product/05.jpg"
     },
 
 ];
