@@ -156,7 +156,7 @@
                 <!-- SUBTOTAL -->
                 <div class="subtotal">
                     <h5>Tiền hàng</h5>
-                    <h5>800.000 VNĐ</h5>
+                    <h5>4.240.000 VNĐ</h5>
                 </div>
                 <!-- /SUBTOTAL -->
 
@@ -177,7 +177,7 @@
                 <!-- TOTAL -->
                 <div class="total">
                     <h5>Tổng cộng</h5>
-                    <h5>835.000 VNĐ</h5>
+                    <h5>4.270.000 VNĐ</h5>
                 </div>
                 <!-- /TOTAL -->
             </div>
@@ -191,6 +191,7 @@
         <div class="shop-products shop-cart">
             <h3 class="title">Giỏ hàng</h3>
 
+
             <!-- COMPARE MODAL -->
             <div id="compare-modal" class="compare-modal mfp-with-anim mfp-hide">
                 <img src="images/icons/compare-modal-logo.png" alt="logo">
@@ -198,7 +199,7 @@
                 <h6>Has been sucessfully added to compare</h6>
                 <div class="options">
                     <a class="button medium mfp-close">Return to store</a>
-                    <a href="compare.html" class="button medium compare">Go to compare</a>
+                    <a href="/compare" class="button medium compare">Go to compare</a>
                 </div>
             </div>
             <!-- /COMPARE MODAL -->
@@ -242,73 +243,386 @@
 
                 <!-- ROW -->
                 {{#each datCart}}
-                <div class="row">
-                    <!-- CELL -->
-                    <div class="cell cart-item">
-                        <div class="product-picture">
-                            <figure class="liquid">
-                                <img src="{{this.url}}" alt="product-picture">
-                            </figure>
-                        </div>
-                        <p class="highlighted">{{this.name}}</p>
-                        <h3>{{this.seri}}</h3>
-                        <p>Không có mô tả.</p>
-                        <h6>Size: <span>{{this.size}}</span></h6>
-                        <!-- COLORPICKER -->
-                        <ul class="colorpicker">
-                            <li><span data-color="{{this.color}}"></span></li>
-                        </ul>
-                        <!-- /COLORPICKER -->
-                    </div>
-                    <!-- /CELL -->
-
-                    <!-- CELL -->
-                    <div class="cell">
-                        <p class="highlighted">{{this.price}}</p>
-                    </div>
-                    <!-- /CELL -->
-
-                    <!-- CELL -->
-                    <div class="cell">
-                        <!-- COUNTER -->
-                        <div class="counter">
-                            <div class="control left"></div>
-                            <div class="value">
-                                <h5>{{this.number}}</h5>
+                    <div class="row">
+                        <!-- CELL -->
+                        <div class="cell cart-item">
+                            <div class="product-picture">
+                                <figure class="liquid">
+                                    <img src="{{this.url}}" alt="product-picture">
+                                </figure>
                             </div>
-                            <div class="control right"></div>
+                            <p class="highlighted">{{this.name}}</p>
+                            <h3>{{this.seri}}</h3>
+                            <p>Không có mô tả.</p>
+                            <h6>Size: <span>{{this.size}}</span></h6>
+                            <!-- COLORPICKER -->
+                            <ul class="colorpicker">
+                                <li><span data-color="{{this.color}}"></span></li>
+                            </ul>
+                            <!-- /COLORPICKER -->
                         </div>
-                        <!-- /COUNTER -->
-                    </div>
-                    <!-- /CELL -->
+                        <!-- /CELL -->
 
-                    <!-- CELL -->
-                    <div class="cell">
-                        <p class="highlighted">{{this.total}}</p>
-                    </div>
-                    <!-- /CELL -->
-
-                    <!-- CELL -->
-                    <div class="cell buttons medium">
-                        <!-- ACTIONS -->
-                        <div class="actions">
-                            <a href="#" class="button medium no-stock">
-                                <!-- SVG PLUS -->
-                                <svg class="svg-plus">
-                                    <use xlink:href="#svg-plus"></use>
-                                </svg>
-                                <!-- /SVG PLUS -->
-                            </a>
+                        <!-- CELL -->
+                        <div class="cell">
+                            <p class="highlighted">{{this.price}}</p>
                         </div>
-                        <!-- /ACTIONS -->
+                        <!-- /CELL -->
+
+                        <!-- CELL -->
+                        <div class="cell">
+                            <!-- COUNTER -->
+                            <div class="counter">
+                                <div class="control left"></div>
+                                <div class="value">
+                                    <h5>{{this.number}}</h5>
+                                </div>
+                                <div class="control right"></div>
+                            </div>
+                            <!-- /COUNTER -->
+                        </div>
+                        <!-- /CELL -->
+
+                        <!-- CELL -->
+                        <div class="cell">
+                            <p class="highlighted">{{this.total}}</p>
+                        </div>
+                        <!-- /CELL -->
+
+                        <!-- CELL -->
+                        <div class="cell buttons medium">
+                            <!-- ACTIONS -->
+                            <div class="actions">
+                                <a href="#" class="button medium no-stock">
+                                    <!-- SVG PLUS -->
+                                    <svg class="svg-plus">
+                                        <use xlink:href="#svg-plus"></use>
+                                    </svg>
+                                    <!-- /SVG PLUS -->
+                                </a>
+                            </div>
+                            <!-- /ACTIONS -->
+                        </div>
+                        <!-- /CELL -->
                     </div>
-                    <!-- /CELL -->
-                </div>
                 {{/each}}
                 <!-- /ROW -->
 
             </div>
             <!-- /SHOPPING CART -->
+
+            <!-- PROFILE INFO ---- THÊM LUỒNG MUA HÀNG --- -->
+            <div class="profile-info">
+                <!-- PROFILE HEADER -->
+                <h5 class="profile-header">
+                    <span>01</span>Phương thức giao hàng
+                    <!-- SVG PLUS 4-12 12- 4 => 12x12 -->
+                    <svg class="plus">
+                        <rect class="vertical" x="4" width="4" height="12"/>
+                        <rect y="4" width="12" height="4"/>
+                    </svg>
+                    <!-- /SVG PLUS -->
+                </h5>
+                <!-- /PROFILE HEADER -->
+
+                <!-- PROFILE DATA -->
+                <div class="profile-data">
+                    <!-- PROFILE COLUMN -->
+                    <div class="profile-column">
+                        <h5>Khách hàng mới</h5>
+                        <div class="featured-form">
+                            <form class="westeros-form">
+                                <label class="rl-label">Đăng kí mới hoặc mua hàng không cần đăng kí</label>
+                                <div class="full-input">
+                                    <input type="radio" id="op1" name="register_guest" value="op1" checked>
+                                    <label for="op1"><span class="radio"><span></span></span>Đăng kí tài khoản</label>
+                                </div>
+                                <div class="full-input">
+                                    <input type="radio" id="op2" name="register_guest" value="op2">
+                                    <label for="op2"><span class="radio"><span></span></span>Mua hàng không cần đăng nhập</label>
+                                </div>
+                                <p>Bằng cách đồng ý mua hàng, khách hàng chấp thuận các điều khoản mua hàng của shop.</p>
+                                <button class="button login">Tiếp tục</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /PROFILE COLUMN -->
+
+                    <!-- PROFILE COLUMN -->
+                    <div class="profile-column">
+                        <h5>Đăng nhập</h5>
+                        <div class="featured-form">
+                            <form class="westeros-form">
+                                <label class="rl-label">Nhập Email</label>
+                                <input type="text" placeholder="Nhập email của bạn tại đây...">
+                                <label class="rl-label">Nhập mật khẩu</label>
+                                <input type="text" placeholder="Nhập mật khẩu của bạn tại đây...">
+                                <a href="/forgot" class="fp-msg">Quên mật khẩu? Lấy lại mật khẩu tại đây!</a>
+                                <button class="button login">Đăng nhập ngay!</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /PROFILE COLUMN -->
+                </div>
+                <!-- /PROFILE DATA -->
+
+                <!-- PROFILE HEADER -->
+                <h5 class="profile-header">
+                    <span>02</span>Thông tin hóa đơn
+                    <!-- SVG PLUS -->
+                    <svg class="plus">
+                        <rect class="vertical" x="4" width="4" height="12"/>
+                        <rect y="4" width="12" height="4"/>
+                    </svg>
+                    <!-- /SVG PLUS -->
+                </h5>
+                <!-- /PROFILE HEADER -->
+
+                <!-- PROFILE DATA -->
+                <div class="profile-data">
+                    <div class="featured-form">
+                        <form class="westeros-form">
+                            <div>
+                                <label class="rl-label required">Tên</label>
+                                <input type="text" placeholder="Nhập tên của bạn tại đây...">
+                            </div>
+                            <div>
+                                <label class="rl-label required">Họ</label>
+                                <input type="text" placeholder="Nhập họ của bạn tại đây...">
+                            </div>
+                            <div>
+                                <label class="rl-label required">Địa chỉ email</label>
+                                <input type="text" placeholder="Nhập địa chỉ email của bạn tại đây...">
+                            </div>
+                            <div>
+                                <label class="rl-label required">Số điện thoại</label>
+                                <input type="text" placeholder="Nhập số điện thoại của bạn tại đây...">
+                            </div>
+                            <div>
+                                <label class="rl-label">Tên công ty</label>
+                                <input type="text" placeholder="Nhập tên công ty tại đây...">
+                            </div>
+                            <div>
+                                <label class="rl-label required">Địa chỉ</label>
+                                <input type="text" placeholder="Nhập địa chỉ giao hàng tại dây...">
+                            </div>
+                            <div>
+                                <label class="rl-label required">Quốc gia</label>
+                                <label for="country1">
+                                    <select name="country" id="country1">
+                                        <option value="0">Chọn tỉnh/thành...</option>
+                                        <option value="1">TP Hồ Chí Minh</option>
+                                        <option value="2">Đà Nẵng</option>
+                                        <option value="3">Hà Nội</option>
+                                        <option value="4">Khác</option>
+                                    </select>
+                                    <!-- SVG ARROW -->
+                                    <svg class="svg-arrow select-arrow">
+                                        <use xlink:href="#svg-arrow"></use>
+                                    </svg>
+                                    <!-- /SVG ARROW -->
+                                </label>
+                            </div>
+                            <div>
+                                <label class="rl-label required">Quận / Huyện</label>
+                                <input type="text" placeholder="Nhập tên quận/huyện...">
+                            </div>
+                            <div>
+                                <label class="rl-label required">Xã / Phường</label>
+                                <input type="text" placeholder="Nhập tên xã/phường...">
+                            </div>
+                            <div>
+                                <label class="rl-label required">Mã bưu chính</label>
+                                <input type="text" placeholder="Nhập mã bưu chính tại đây...">
+                            </div>
+                            <div>
+                                <div class="full-input">
+                                    <input type="checkbox" id="autocomplete" name="autocomplete" checked>
+                                    <label for="autocomplete"><span class="checkbox"><span></span></span>Tự động điền thông tin của bạn</label>
+                                </div>
+                                <div class="full-input">
+                                    <input type="checkbox" id="shipping-address" name="shipping-address" checked>
+                                    <label for="shipping-address"><span class="checkbox"><span></span></span>Giao hàng đến địa chỉ tương ứng</label>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="button login">Tiếp tục</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- /PROFILE DATA -->
+
+                <!-- PROFILE HEADER -->
+                <h5 class="profile-header">
+                    <span>03</span>Thông tin giao hàng
+                    <!-- SVG PLUS -->
+                    <svg class="plus">
+                        <rect class="vertical" x="4" width="4" height="12"/>
+                        <rect y="4" width="12" height="4"/>
+                    </svg>
+                    <!-- /SVG PLUS -->
+                </h5>
+                <!-- /PROFILE HEADER -->
+
+
+                <!-- PROFILE DATA -->
+                <div class="profile-data">
+                    <div class="featured-form">
+                        <form class="westeros-form">
+                            <div>
+                                <label class="rl-label required">Tên</label>
+                                <input type="text" placeholder="Nhập tên của bạn tại đây...">
+                            </div>
+                            <div>
+                                <label class="rl-label required">Họ</label>
+                                <input type="text" placeholder="Nhập họ của bạn tại đây...">
+                            </div>
+                            <div>
+                                <label class="rl-label required">Địa chỉ email</label>
+                                <input type="text" placeholder="Nhập địa chỉ email của bạn tại đây...">
+                            </div>
+                            <div>
+                                <label class="rl-label required">Số điện thoại</label>
+                                <input type="text" placeholder="Nhập số điện thoại của bạn tại đây...">
+                            </div>
+                            <div>
+                                <label class="rl-label">Tên công ty</label>
+                                <input type="text" placeholder="Nhập tên công ty tại đây...">
+                            </div>
+                            <div>
+                                <label class="rl-label required">Địa chỉ</label>
+                                <input type="text" placeholder="Nhập địa chỉ giao hàng tại dây...">
+                            </div>
+                            <div>
+                                <label class="rl-label required">Quốc gia</label>
+                                <label for="country1">
+                                    <select name="country" id="country1">
+                                        <option value="0">Chọn tỉnh/thành...</option>
+                                        <option value="1">TP Hồ Chí Minh</option>
+                                        <option value="2">Đà Nẵng</option>
+                                        <option value="3">Hà Nội</option>
+                                        <option value="4">Khác</option>
+                                    </select>
+                                    <!-- SVG ARROW -->
+                                    <svg class="svg-arrow select-arrow">
+                                        <use xlink:href="#svg-arrow"></use>
+                                    </svg>
+                                    <!-- /SVG ARROW -->
+                                </label>
+                            </div>
+                            <div>
+                                <label class="rl-label required">Quận / Huyện</label>
+                                <input type="text" placeholder="Nhập tên quận/huyện...">
+                            </div>
+                            <div>
+                                <label class="rl-label required">Xã / Phường</label>
+                                <input type="text" placeholder="Nhập tên xã/phường...">
+                            </div>
+                            <div>
+                                <label class="rl-label required">Mã bưu chính</label>
+                                <input type="text" placeholder="Nhập mã bưu chính tại đây...">
+                            </div>
+                            <div class="full-input">
+                                <label class="rl-label">Ghi chú cho nhân viên giao hàng</label>
+                                <textarea placeholder="Nhập yêu cầu của bạn tại đây..."></textarea>
+                            </div>
+                            <div class="full-input"></div>
+                            <div>
+                                <input type="checkbox" id="autocomplete2" name="autocomplete2" checked>
+                                <label for="autocomplete2"><span class="checkbox"><span></span></span>Tự động điền với thông tin của bạn</label>
+                            </div>
+                            <div>
+                                <button class="button login">Tiếp tục</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- /PROFILE DATA -->
+
+
+                <!-- PROFILE HEADER -->
+                <h5 class="profile-header">
+                    <span>04</span>Phương thức giao hàng
+                    <!-- SVG PLUS -->
+                    <svg class="plus">
+                        <rect class="vertical" x="4" width="4" height="12"/>
+                        <rect y="4" width="12" height="4"/>
+                    </svg>
+                    <!-- /SVG PLUS -->
+                </h5>
+                <!-- /PROFILE HEADER -->
+
+                <!-- PROFILE DATA -->
+                <div class="profile-data">
+                    <div class="featured-form">
+                        <form class="westeros-form">
+                            <div class="full-input">
+                                <input type="radio" id="free-shipping" name="shipping_method" value="free-shipping">
+                                <label class="rl-label" for="free-shipping"><span class="radio"><span></span></span>Miễn phí (0 VNĐ)</label>
+                                <p>Dành cho các đơn hàng từ 2.000.000 VNĐ trở lên.</p>
+                            </div>
+
+                            <div class="full-input">
+                                <input type="radio" id="domestic-shipping" name="shipping_method" value="domestic-shipping">
+                                <label class="rl-label" for="domestic-shipping"><span class="radio"><span></span></span>Thông thường (50.000 VNĐ)</label>
+                                <p>Dành cho các đơn hàng thông thường.</p>
+                            </div>
+
+                            <div class="full-input">
+                                <input type="radio" id="overnight-shipping" name="shipping_method" value="overnight-shipping" checked>
+                                <label class="rl-label" for="overnight-shipping"><span class="radio"><span></span></span>Giao hàng nhanh 24h(150.000 VNĐ)</label>
+                                <p>Nhận hàng ngay chỉ sau 24h.</p>
+                            </div>
+
+                            <button class="button login">Tiếp tục</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- /PROFILE DATA -->
+
+                <!-- PROFILE HEADER -->
+                <h5 class="profile-header">
+                    <span>05</span>Phương thức thanh toán
+                    <!-- SVG PLUS -->
+                    <svg class="plus">
+                        <rect class="vertical" x="4" width="4" height="12"/>
+                        <rect y="4" width="12" height="4"/>
+                    </svg>
+                    <!-- /SVG PLUS -->
+                </h5>
+                <!-- /PROFILE HEADER -->
+
+                <!-- PROFILE DATA -->
+                <div class="profile-data">
+                    <div class="featured-form">
+                        <form class="westeros-form">
+                            <div class="full-input">
+                                <input type="radio" id="bank" name="payment_method" value="bank">
+                                <label class="rl-label" for="bank"><span class="radio"><span></span></span>Trực tiếp qua ngân hàng</label>
+                                <p>Chuyển tiền trực tiếp qua ngân hàng hoặc ATM.</p>
+                            </div>
+
+                            <div class="full-input">
+                                <input type="radio" id="paypal" name="payment_method" value="paypal">
+                                <label class="rl-label" for="paypal"><span class="radio"><span></span></span>Bằng thẻ</label>
+                            </div>
+
+                            <div class="full-input">
+                                <input type="radio" id="cheque" name="payment_method" value="cheque" checked>
+                                <label class="rl-label" for="cheque"><span class="radio"><span></span></span>Thẻ Paypal</label>
+                            </div>
+
+                            <button class="button login">Tiếp tục</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- /PROFILE DATA -->
+                <button form="checkout-form" class="button checkout-button">Hoàn tất</button>
+                </br>
+            </div>
+            <!-- /PROFILE INFO -->
+
         </div>
         <!-- /SHOP PRODUCTS -->
     </section>
