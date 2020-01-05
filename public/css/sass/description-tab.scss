@@ -24,7 +24,7 @@
 			text-align: center;
 			background-color: #fff;
 			position: relative;
-			@include transition(all, .3s, ease);
+			@include transition(all, 1s, ease);
 		}
 
 		&.selected > a {

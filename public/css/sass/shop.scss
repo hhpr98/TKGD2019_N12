@@ -160,7 +160,7 @@
 				top: 0;
 				left: 0;
 				cursor: pointer;
-				@include transition(all, .3s, ease);
+				@include transition(all, 1s, ease);
 					
 				&:hover {
 					background-color: $brand;
@@ -333,7 +333,7 @@ svg.sidebar-control {
 			line-height: 18px;
 			padding: 0 15px;
 			background-color: #fff;
-			@include transition(all, .3s, ease);
+			@include transition(all, 1s, ease);
 		}
 	}
 }
@@ -435,7 +435,7 @@ svg.sidebar-control {
 			color: #81929b;
 			font-family: $main-font;
 			font-size: 11px / 16px * 1em;
-			@include transition(all, .3s, ease);
+			@include transition(all, 1s, ease);
 			position: relative;
 			
 			&:hover {
