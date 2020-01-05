@@ -323,4 +323,8 @@ router.get('/checkout', function(req, res, next) {
   res.render('checkout',{datCheck});
 });
 
+router.get('/compare', function(req, res, next) {
+    res.render('compare');
+});
+
 module.exports = router;
