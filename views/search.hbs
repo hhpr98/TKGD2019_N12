@@ -7,9 +7,9 @@
 <!-- /SECTION-NAV -->
 
 </br>
- <section id="section-nav">
-        <h2 style="color:red;">Đã tìm thấy 50 kết quả!</h2>
-    </section>
+<section id="section-nav">
+    <h2 style="color:red;">Đã tìm thấy 50 kết quả!</h2>
+</section>
 
 <!-- SHOP -->
 <div id="shop-wrap">
@@ -38,8 +38,8 @@
                     <a href="#">
                         <h6>Đồng hồ thời trang (7)</h6>
                         <svg class="plus">
-                            <rect class="vertical" x="3" width="3" height="9"/>
-                            <rect y="3" width="9" height="3"/>
+                            <rect class="vertical" x="3" width="3" height="9" />
+                            <rect y="3" width="9" height="3" />
                         </svg>
                     </a>
                     <ul class="sub-items">
@@ -88,8 +88,8 @@
                     <a href="#">
                         <h6>Đồng hồ điện tử (15)</h6>
                         <svg class="plus">
-                            <rect class="vertical" x="3" width="3" height="9"/>
-                            <rect y="3" width="9" height="3"/>
+                            <rect class="vertical" x="3" width="3" height="9" />
+                            <rect y="3" width="9" height="3" />
                         </svg>
                     </a>
                     <ul class="sub-items">
@@ -138,8 +138,8 @@
                     <a href="#">
                         <h6>Đồng hồ thông minh (20)</h6>
                         <svg class="plus">
-                            <rect class="vertical" x="3" width="3" height="9"/>
-                            <rect y="3" width="9" height="3"/>
+                            <rect class="vertical" x="3" width="3" height="9" />
+                            <rect y="3" width="9" height="3" />
                         </svg>
                     </a>
                     <ul class="sub-items">
@@ -188,8 +188,8 @@
                     <a href="#">
                         <h6>Pants / Skirts (28)</h6>
                         <svg class="plus">
-                            <rect class="vertical" x="3" width="3" height="9"/>
-                            <rect y="3" width="9" height="3"/>
+                            <rect class="vertical" x="3" width="3" height="9" />
+                            <rect y="3" width="9" height="3" />
                         </svg>
                     </a>
                     <ul class="sub-items">
@@ -235,13 +235,17 @@
 
                 <!--ACCORDION ITEM-->
                 <li>
-                    <a href="#"><h6>Đồng hồ treo tường (10)</h6></a>
+                    <a href="#">
+                        <h6>Đồng hồ treo tường (10)</h6>
+                    </a>
                 </li>
                 <!--/ACCORDION ITEM-->
 
                 <!--ACCORDION ITEM-->
                 <li>
-                    <a href="#"><h6>Custom Sneakers (17)</h6></a>
+                    <a href="#">
+                        <h6>Custom Sneakers (17)</h6>
+                    </a>
                 </li>
                 <!--/ACCORDION ITEM-->
 
@@ -250,8 +254,8 @@
                     <a href="#">
                         <h6>Nightgowns (6)</h6>
                         <svg class="plus">
-                            <rect class="vertical" x="3" width="3" height="9"/>
-                            <rect y="3" width="9" height="3"/>
+                            <rect class="vertical" x="3" width="3" height="9" />
+                            <rect y="3" width="9" height="3" />
                         </svg>
                     </a>
                     <ul class="sub-items">
@@ -359,57 +363,61 @@
             <ul class="product-preview">
 
                 {{#each dat1}}
-                    <li>
-                        <a href="/productdetail">
-                            <div class="picture">
-                                <figure class="liquid">
-                                    <img src="{{this.url}}" alt="product1">
-                                </figure>
-                            </div>
-                        </a>
-                        <a href="women-shop.html"><p class="highlighted category">{{this.name}}</p></a>
-                        <a href="/productdetail"><h6>{{this.seri}}</h6></a>
-                        <!-- RATING -->
-                        <ul class="rating">
-                            <li class="filled">
-                                <!-- SVG STAR -->
-                                <svg class="svg-star">
-                                    <use xlink:href="#svg-star"></use>
-                                </svg>
-                                <!-- /SVG STAR -->
-                            </li>
-                            <li class="filled">
-                                <!-- SVG STAR -->
-                                <svg class="svg-star">
-                                    <use xlink:href="#svg-star"></use>
-                                </svg>
-                                <!-- /SVG STAR -->
-                            </li>
-                            <li class="filled">
-                                <!-- SVG STAR -->
-                                <svg class="svg-star">
-                                    <use xlink:href="#svg-star"></use>
-                                </svg>
-                                <!-- /SVG STAR -->
-                            </li>
-                            <li class="filled">
-                                <!-- SVG STAR -->
-                                <svg class="svg-star">
-                                    <use xlink:href="#svg-star"></use>
-                                </svg>
-                                <!-- /SVG STAR -->
-                            </li>
-                            <li>
-                                <!-- SVG STAR -->
-                                <svg class="svg-star">
-                                    <use xlink:href="#svg-star"></use>
-                                </svg>
-                                <!-- /SVG STAR -->
-                            </li>
-                        </ul>
-                        <!-- /RATING -->
-                        <p class="highlighted current">{{this.price}}</p>
-                    </li>
+                <li>
+                    <a href="/productdetail">
+                        <div class="picture">
+                            <figure class="liquid">
+                                <img src="{{this.url}}" alt="product1">
+                            </figure>
+                        </div>
+                    </a>
+                    <a href="women-shop.html">
+                        <p class="highlighted category">{{this.name}}</p>
+                    </a>
+                    <a href="/productdetail">
+                        <h6>{{this.seri}}</h6>
+                    </a>
+                    <!-- RATING -->
+                    <ul class="rating">
+                        <li class="filled">
+                            <!-- SVG STAR -->
+                            <svg class="svg-star">
+                                <use xlink:href="#svg-star"></use>
+                            </svg>
+                            <!-- /SVG STAR -->
+                        </li>
+                        <li class="filled">
+                            <!-- SVG STAR -->
+                            <svg class="svg-star">
+                                <use xlink:href="#svg-star"></use>
+                            </svg>
+                            <!-- /SVG STAR -->
+                        </li>
+                        <li class="filled">
+                            <!-- SVG STAR -->
+                            <svg class="svg-star">
+                                <use xlink:href="#svg-star"></use>
+                            </svg>
+                            <!-- /SVG STAR -->
+                        </li>
+                        <li class="filled">
+                            <!-- SVG STAR -->
+                            <svg class="svg-star">
+                                <use xlink:href="#svg-star"></use>
+                            </svg>
+                            <!-- /SVG STAR -->
+                        </li>
+                        <li>
+                            <!-- SVG STAR -->
+                            <svg class="svg-star">
+                                <use xlink:href="#svg-star"></use>
+                            </svg>
+                            <!-- /SVG STAR -->
+                        </li>
+                    </ul>
+                    <!-- /RATING -->
+                    <p class="highlighted current">{{this.price}}</p>
+                </li>
                 {{/each}}
 
             </ul>
@@ -495,261 +503,271 @@
             <ul class="product-list grid">
                 <!-- PRODUCT -->
                 {{#each dat2}}
-                    <li class="list-item">
-                        <!-- ACTIONS -->
-                        <div class="actions">
-                            <figure class="liquid">
-                                <img src="{{this.url}}" alt="product1">
-                            </figure>
-                            <div>
-                                <a href="#qv-p1" class="button quick-view" data-effect="mfp-3d-unfold">
-                                    <!-- SVG QUICKVIEW -->
-                                    <svg class="svg-quickview">
-                                        <use xlink:href="#svg-quickview"></use>
-                                    </svg>
-                                    <!-- /SVG QUICKVIEW -->
-                                </a>
-                                <!-- QUICK VIEW POPUP -->
-                                <div id="qv-p1" class="product-quick-view mfp-with-anim mfp-hide">
-                                    <!-- PRODUCT PICTURES -->
-                                    <div class="product-pictures">
-                                        <div class="product-photo">
+                <li class="list-item">
+                    <!-- ACTIONS -->
+                    <div class="actions">
+                        <figure class="liquid">
+                            <img src="{{this.url}}" alt="product1">
+                        </figure>
+                        <div>
+                            <a href="#qv-p1" class="button quick-view" data-effect="mfp-3d-unfold">
+                                <!-- SVG QUICKVIEW -->
+                                <svg class="svg-quickview">
+                                    <use xlink:href="#svg-quickview"></use>
+                                </svg>
+                                <!-- /SVG QUICKVIEW -->
+                            </a>
+                            <!-- QUICK VIEW POPUP -->
+                            <div id="qv-p1" class="product-quick-view mfp-with-anim mfp-hide">
+                                <!-- PRODUCT PICTURES -->
+                                <div class="product-pictures">
+                                    <div class="product-photo">
+                                        <figure class="liquid">
+                                            <img src="images/shop_product/02.jpg" alt="product-image">
+                                        </figure>
+                                    </div>
+                                    <ul class="picture-views">
+                                        <!-- VIEW -->
+                                        <li class="selected">
                                             <figure class="liquid">
-                                                <img src="images/shop_product/02.jpg" alt="product-image">
+                                                <img src="images/shop_product/03.jpg" alt="picture-view">
                                             </figure>
-                                        </div>
-                                        <ul class="picture-views">
-                                            <!-- VIEW -->
-                                            <li class="selected">
-                                                <figure class="liquid">
-                                                    <img src="images/shop_product/03.jpg" alt="picture-view">
-                                                </figure>
-                                            </li>
-                                            <!-- /VIEW -->
+                                        </li>
+                                        <!-- /VIEW -->
 
-                                            <!-- VIEW -->
-                                            <li>
-                                                <figure class="liquid">
-                                                    <img src="{{this.url}}" alt="picture-view">
-                                                </figure>
-                                            </li>
-                                            <!-- /VIEW -->
-                                        </ul>
-                                    </div>
-                                    <!-- /PRODUCT PICTURES -->
-
-                                    <!-- PRODUCT DESCRIPTION -->
-                                    <div class="product-description">
-                                        <a href="#"><p class="highlighted category">{{this.name}}</p></a>
-                                        <a href="#"><h6>{{this.seri}}</h6></a>
-                                        <!-- RATING -->
-                                        <ul class="rating big">
-                                            <li class="filled">
-                                                <!-- SVG STAR -->
-                                                <svg class="svg-star">
-                                                    <use xlink:href="#svg-star"></use>
-                                                </svg>
-                                                <!-- /SVG STAR -->
-                                            </li>
-                                            <li class="filled">
-                                                <!-- SVG STAR -->
-                                                <svg class="svg-star">
-                                                    <use xlink:href="#svg-star"></use>
-                                                </svg>
-                                                <!-- /SVG STAR -->
-                                            </li>
-                                            <li class="filled">
-                                                <!-- SVG STAR -->
-                                                <svg class="svg-star">
-                                                    <use xlink:href="#svg-star"></use>
-                                                </svg>
-                                                <!-- /SVG STAR -->
-                                            </li>
-                                            <li class="filled">
-                                                <!-- SVG STAR -->
-                                                <svg class="svg-star">
-                                                    <use xlink:href="#svg-star"></use>
-                                                </svg>
-                                                <!-- /SVG STAR -->
-                                            </li>
-                                            <li>
-                                                <!-- SVG STAR -->
-                                                <svg class="svg-star">
-                                                    <use xlink:href="#svg-star"></use>
-                                                </svg>
-                                                <!-- /SVG STAR -->
-                                            </li>
-                                        </ul>
-                                        <!-- /RATING -->
-                                        <p>{{this.des}}</p>
-                                        <p class="highlighted current">{{this.price}}</p>
-                                        <p class="highlighted previous">{{this.oldprice}}</p>
-                                        <h5 class="stock">Còn:
-                                            <!-- SVG CHECK -->
-                                            <svg class="svg-check">
-                                                <use xlink:href="#svg-check"></use>
-                                            </svg>
-                                            <!-- /SVG CHECK -->
-                                            <span class="available">Hiện còn bán</span>
-                                        </h5>
-                                        <h5>Màn hình:</h5>
-                                        <form class="westeros-form">
-                                            <input id="small1" type="radio" name="size" value="small">
-                                            <label for="small1"><span class="radio"><span></span></span>Chống thấm</label>
-
-                                            <input id="medium1" type="radio" name="size" value="medium">
-                                            <label for="medium1"><span class="radio"><span></span></span>Chống trầy</label>
-
-                                            <input id="large1" type="radio" name="size" value="large" checked>
-                                            <label for="large1"><span class="radio"><span></span></span>Cường lực</label>
-
-                                            <input id="extralarge1" type="radio" name="size" value="extralarge">
-                                            <label for="extralarge1"><span class="radio"><span></span></span>Chống nước</label>
-                                        </form>
-                                        <div class="color-selection">
-                                            <h5>Màu sắc:</h5>
-                                            <!-- COLORPICKER -->
-                                            <ul class="colorpicker">
-                                                <li><span data-color="#008fbe"></span></li>
-                                                <li class="selected"><span data-color="#17ccac"></span></li>
-                                                <li><span data-color="#4c4cab"></span></li>
-                                                <li><span data-color="#252525"></span></li>
-                                            </ul>
-                                            <!-- /COLORPICKER -->
-                                        </div>
-                                        <div>
-                                            <h5>Số lượng:</h5>
-                                            <!-- COUNTER -->
-                                            <div class="counter">
-                                                <div class="control left"></div>
-                                                <div class="value">
-                                                    <h5>1</h5>
-                                                </div>
-                                                <div class="control right"></div>
-                                            </div>
-                                            <!-- /COUNTER -->
-                                        </div>
-                                        <div class="options">
-                                            <a href="#" class="button medium fb"></a>
-                                            <a href="#" class="button medium twt"></a>
-                                            <a href="#compare-modal" class="button medium compare cmp-popup" data-effect="mfp-3d-unfold">
-                                                <!-- SVG COMPARE -->
-                                                <svg class="svg-compare">
-                                                    <use xlink:href="#svg-compare"></use>
-                                                </svg>
-                                                <!-- /SVG COMPARE -->
-                                            </a>
-                                            <a href="#" class="button medium wishlist">
-                                                <!-- SVG WISHLIST -->
-                                                <svg class="svg-wishlist">
-                                                    <use xlink:href="#svg-wishlist"></use>
-                                                </svg>
-                                                <!-- /SVG WISHLIST -->
-                                            </a>
-                                            <a href="/cart" class="button cart-add">
-                                                <!-- SVG PLUS -->
-                                                <svg class="svg-plus">
-                                                    <use xlink:href="#svg-plus"></use>
-                                                </svg>
-                                                <!-- /SVG PLUS -->
-                                                Giỏ hàng
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- /PRODUCT DESCRIPTION -->
+                                        <!-- VIEW -->
+                                        <li>
+                                            <figure class="liquid">
+                                                <img src="{{this.url}}" alt="picture-view">
+                                            </figure>
+                                        </li>
+                                        <!-- /VIEW -->
+                                    </ul>
                                 </div>
-                                <!-- /QUICK VIEW POPUP -->
-                                <a href="/productdetail" class="button full-view">
-                                    <!-- SVG FULLVIEW -->
-                                    <svg class="svg-fullview">
-                                        <use xlink:href="#svg-fullview"></use>
-                                    </svg>
-                                    <!-- /SVG FULLVIEW -->
-                                </a>
-                                <a href="#compare-modal" class="button compare cmp-popup" data-effect="mfp-3d-unfold">
-                                    <!-- SVG COMPARE -->
-                                    <svg class="svg-compare">
-                                        <use xlink:href="#svg-compare"></use>
-                                    </svg>
-                                    <!-- /SVG COMPARE -->
-                                </a>
-                            </div>
-                        </div>
-                        <!-- /ACTIONS -->
+                                <!-- /PRODUCT PICTURES -->
 
-                        <!-- DESCRIPTION -->
-                        <div class="description">
-                            <div class="clearfix">
-                                <a href="#"><p class="highlighted category">{{this.name}}</p></a>
-                                <!-- RATING -->
-                                <ul class="rating">
-                                    <li class="filled">
-                                        <!-- SVG STAR -->
-                                        <svg class="svg-star">
-                                            <use xlink:href="#svg-star"></use>
+                                <!-- PRODUCT DESCRIPTION -->
+                                <div class="product-description">
+                                    <a href="#">
+                                        <p class="highlighted category">{{this.name}}</p>
+                                    </a>
+                                    <a href="#">
+                                        <h6>{{this.seri}}</h6>
+                                    </a>
+                                    <!-- RATING -->
+                                    <ul class="rating big">
+                                        <li class="filled">
+                                            <!-- SVG STAR -->
+                                            <svg class="svg-star">
+                                                <use xlink:href="#svg-star"></use>
+                                            </svg>
+                                            <!-- /SVG STAR -->
+                                        </li>
+                                        <li class="filled">
+                                            <!-- SVG STAR -->
+                                            <svg class="svg-star">
+                                                <use xlink:href="#svg-star"></use>
+                                            </svg>
+                                            <!-- /SVG STAR -->
+                                        </li>
+                                        <li class="filled">
+                                            <!-- SVG STAR -->
+                                            <svg class="svg-star">
+                                                <use xlink:href="#svg-star"></use>
+                                            </svg>
+                                            <!-- /SVG STAR -->
+                                        </li>
+                                        <li class="filled">
+                                            <!-- SVG STAR -->
+                                            <svg class="svg-star">
+                                                <use xlink:href="#svg-star"></use>
+                                            </svg>
+                                            <!-- /SVG STAR -->
+                                        </li>
+                                        <li>
+                                            <!-- SVG STAR -->
+                                            <svg class="svg-star">
+                                                <use xlink:href="#svg-star"></use>
+                                            </svg>
+                                            <!-- /SVG STAR -->
+                                        </li>
+                                    </ul>
+                                    <!-- /RATING -->
+                                    <p>{{this.des}}</p>
+                                    <p class="highlighted current">{{this.price}}</p>
+                                    <p class="highlighted previous">{{this.oldprice}}</p>
+                                    <h5 class="stock">Còn:
+                                        <!-- SVG CHECK -->
+                                        <svg class="svg-check">
+                                            <use xlink:href="#svg-check"></use>
                                         </svg>
-                                        <!-- /SVG STAR -->
-                                    </li>
-                                    <li class="filled">
-                                        <!-- SVG STAR -->
-                                        <svg class="svg-star">
-                                            <use xlink:href="#svg-star"></use>
-                                        </svg>
-                                        <!-- /SVG STAR -->
-                                    </li>
-                                    <li class="filled">
-                                        <!-- SVG STAR -->
-                                        <svg class="svg-star">
-                                            <use xlink:href="#svg-star"></use>
-                                        </svg>
-                                        <!-- /SVG STAR -->
-                                    </li>
-                                    <li class="filled">
-                                        <!-- SVG STAR -->
-                                        <svg class="svg-star">
-                                            <use xlink:href="#svg-star"></use>
-                                        </svg>
-                                        <!-- /SVG STAR -->
-                                    </li>
-                                    <li>
-                                        <!-- SVG STAR -->
-                                        <svg class="svg-star">
-                                            <use xlink:href="#svg-star"></use>
-                                        </svg>
-                                        <!-- /SVG STAR -->
-                                    </li>
-                                </ul>
-                                <!-- /RATING -->
-                            </div>
-                            <div class="clearfix">
-                                <a href="#"><h6>{{this.seri}}</h6></a>
-                            </div>
-                            <div class="clearfix">
-                                <p class="highlighted current">{{this.price}}</p>
-                            </div>
+                                        <!-- /SVG CHECK -->
+                                        <span class="available">Hiện còn bán</span>
+                                    </h5>
+                                    <h5>Màn hình:</h5>
+                                    <form class="westeros-form">
+                                        <input id="small1" type="radio" name="size" value="small">
+                                        <label for="small1"><span class="radio"><span></span></span>Chống thấm</label>
 
-                            <!-- CART OPTIONS -->
-                            <div class="cart-options">
-                                <a href="/cart" class="button medium wishlist">
-                                    <!-- SVG WISHLIST -->
-                                    <svg class="svg-wishlist">
-                                        <use xlink:href="#svg-wishlist"></use>
-                                    </svg>
-                                    <!-- /SVG WISHLIST -->
-                                </a>
-                                <a href="/cart" class="button cart-add">
-                                    <!-- SVG PLUS -->
-                                    <svg class="svg-plus">
-                                        <use xlink:href="#svg-plus"></use>
-                                    </svg>
-                                    <!-- /SVG PLUS -->
-                                    Giỏ hàng
-                                </a>
+                                        <input id="medium1" type="radio" name="size" value="medium">
+                                        <label for="medium1"><span class="radio"><span></span></span>Chống trầy</label>
+
+                                        <input id="large1" type="radio" name="size" value="large" checked>
+                                        <label for="large1"><span class="radio"><span></span></span>Cường lực</label>
+
+                                        <input id="extralarge1" type="radio" name="size" value="extralarge">
+                                        <label for="extralarge1"><span class="radio"><span></span></span>Chống
+                                            nước</label>
+                                    </form>
+                                    <div class="color-selection">
+                                        <h5>Màu sắc:</h5>
+                                        <!-- COLORPICKER -->
+                                        <ul class="colorpicker">
+                                            <li><span data-color="#008fbe"></span></li>
+                                            <li class="selected"><span data-color="#17ccac"></span></li>
+                                            <li><span data-color="#4c4cab"></span></li>
+                                            <li><span data-color="#252525"></span></li>
+                                        </ul>
+                                        <!-- /COLORPICKER -->
+                                    </div>
+                                    <div>
+                                        <h5>Số lượng:</h5>
+                                        <!-- COUNTER -->
+                                        <div class="counter">
+                                            <div class="control left"></div>
+                                            <div class="value">
+                                                <h5>1</h5>
+                                            </div>
+                                            <div class="control right"></div>
+                                        </div>
+                                        <!-- /COUNTER -->
+                                    </div>
+                                    <div class="options">
+                                        <a href="#" class="button medium fb"></a>
+                                        <a href="#" class="button medium twt"></a>
+                                        <a href="#compare-modal" class="button medium compare cmp-popup"
+                                            data-effect="mfp-3d-unfold">
+                                            <!-- SVG COMPARE -->
+                                            <svg class="svg-compare">
+                                                <use xlink:href="#svg-compare"></use>
+                                            </svg>
+                                            <!-- /SVG COMPARE -->
+                                        </a>
+                                        <a href="#" class="button medium wishlist">
+                                            <!-- SVG WISHLIST -->
+                                            <svg class="svg-wishlist">
+                                                <use xlink:href="#svg-wishlist"></use>
+                                            </svg>
+                                            <!-- /SVG WISHLIST -->
+                                        </a>
+                                        <a href="/cart" class="button cart-add">
+                                            <!-- SVG PLUS -->
+                                            <svg class="svg-plus">
+                                                <use xlink:href="#svg-plus"></use>
+                                            </svg>
+                                            <!-- /SVG PLUS -->
+                                            Giỏ hàng
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- /PRODUCT DESCRIPTION -->
                             </div>
-                            <!-- /CART OPTIONS -->
+                            <!-- /QUICK VIEW POPUP -->
+                            <a href="/productdetail" class="button full-view">
+                                <!-- SVG FULLVIEW -->
+                                <svg class="svg-fullview">
+                                    <use xlink:href="#svg-fullview"></use>
+                                </svg>
+                                <!-- /SVG FULLVIEW -->
+                            </a>
+                            <a href="#compare-modal" class="button compare cmp-popup" data-effect="mfp-3d-unfold">
+                                <!-- SVG COMPARE -->
+                                <svg class="svg-compare">
+                                    <use xlink:href="#svg-compare"></use>
+                                </svg>
+                                <!-- /SVG COMPARE -->
+                            </a>
                         </div>
-                        <!-- /DESCRIPTION -->
-                    </li>
+                    </div>
+                    <!-- /ACTIONS -->
+
+                    <!-- DESCRIPTION -->
+                    <div class="description">
+                        <div class="clearfix">
+                            <a href="#">
+                                <p class="highlighted category">{{this.name}}</p>
+                            </a>
+                            <!-- RATING -->
+                            <ul class="rating">
+                                <li class="filled">
+                                    <!-- SVG STAR -->
+                                    <svg class="svg-star">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <!-- /SVG STAR -->
+                                </li>
+                                <li class="filled">
+                                    <!-- SVG STAR -->
+                                    <svg class="svg-star">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <!-- /SVG STAR -->
+                                </li>
+                                <li class="filled">
+                                    <!-- SVG STAR -->
+                                    <svg class="svg-star">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <!-- /SVG STAR -->
+                                </li>
+                                <li class="filled">
+                                    <!-- SVG STAR -->
+                                    <svg class="svg-star">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <!-- /SVG STAR -->
+                                </li>
+                                <li>
+                                    <!-- SVG STAR -->
+                                    <svg class="svg-star">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <!-- /SVG STAR -->
+                                </li>
+                            </ul>
+                            <!-- /RATING -->
+                        </div>
+                        <div class="clearfix">
+                            <a href="#">
+                                <h6>{{this.seri}}</h6>
+                            </a>
+                        </div>
+                        <div class="clearfix">
+                            <p class="highlighted current">{{this.price}}</p>
+                        </div>
+
+                        <!-- CART OPTIONS -->
+                        <div class="cart-options">
+                            <a href="/cart" class="button medium wishlist">
+                                <!-- SVG WISHLIST -->
+                                <svg class="svg-wishlist">
+                                    <use xlink:href="#svg-wishlist"></use>
+                                </svg>
+                                <!-- /SVG WISHLIST -->
+                            </a>
+                            <a href="/cart" class="button cart-add">
+                                <!-- SVG PLUS -->
+                                <svg class="svg-plus">
+                                    <use xlink:href="#svg-plus"></use>
+                                </svg>
+                                <!-- /SVG PLUS -->
+                                Giỏ hàng
+                            </a>
+                        </div>
+                        <!-- /CART OPTIONS -->
+                    </div>
+                    <!-- /DESCRIPTION -->
+                </li>
                 {{/each}}
                 <!-- /PRODUCT -->
 
