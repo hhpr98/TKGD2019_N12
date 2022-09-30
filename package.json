@@ -1,26 +1,23 @@
 {
   "name": "tkgd2019-n12",
-  "version": "1.0.1",
-  "private": true,
+  "version": "1.0.2",
+  "private": false,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./index.js"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "express": "^4.16.4",
-    "hbs": "^4.1.1",
-    "http-error": "0.0.6",
-    "http-errors": "~1.6.3",
-    "morgan": "~1.9.1"
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.1",
+    "hbs": "^4.2.0",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0"
   },
-  "main": "app.js",
-  "devDependencies": {},
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hhpr98/TKGD2019_N12.git"
   },
-  "author": "",
+  "author": "hhpr98",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hhpr98/TKGD2019_N12/issues"
